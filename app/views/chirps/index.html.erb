@@ -1,4 +1,6 @@
 <h1>All Chirps</h1>
+<%= link_to "Make a new chirp", new_chirp_path %>
+<hr>
 <% @chirps.each do |chirp| %>
   <p><%= chirp.body %></p>
   <p>
