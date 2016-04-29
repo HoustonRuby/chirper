@@ -1,5 +1,8 @@
 <h1>Chirp</h1>
 <p><%= @chirp.body %></p>
+<% if @chirp.pic.url.length > 0 %>
+  <%= image_tag @chirp.pic.url, width: '100' %>
+<% end %>
 <p>
 - <i><%= @chirp.author %></i>
 </p>
